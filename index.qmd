@@ -107,7 +107,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Create figure and axes
-fig, ax = plt.subplots(figsize=(6, 3.5))
+fig, ax = plt.subplots(figsize=(8, 4))
 
 # Separate data by doctor
 dreamy_data = patients_df[patients_df['doctor_name'] == 'Doc Dreamy']
@@ -147,7 +147,7 @@ ax.text(len(patients_df) * 0.95, duck_mean,
 
 # Professional styling
 ax.set_xlabel('Patient Number', fontsize=12, fontweight='bold')
-ax.set_ylabel('Post-Surgical Symptom Score (Lower is Better)', 
+ax.set_ylabel('Symptom Score\n(Lower is Better)', 
               fontsize=12, fontweight='bold')
 ax.set_title('Post-Surgical Symptom Score by Patient and Doctor', 
              fontsize=14, fontweight='bold', pad=15)
@@ -155,7 +155,7 @@ ax.grid(True, alpha=0.3, linestyle='-', linewidth=0.5)
 ax.legend(loc='upper right', fontsize=11, framealpha=0.9)
 ax.set_xlim(-2, len(patients_df) + 2)
 
-plt.tight_layout()
+plt.tight_layout(rect=[0, 0, 1, 0.98])
 plt.show()
 ```
 
@@ -277,7 +277,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Create figure and axes
-fig, ax = plt.subplots(figsize=(6, 3.5))
+fig, ax = plt.subplots(figsize=(8, 4))
 
 # Separate data by doctor
 dreamy_data = patients_randomized_df[patients_randomized_df['doctor_name'] == 'Doc Dreamy']
@@ -317,7 +317,7 @@ ax.text(len(patients_randomized_df) * 0.95, duck_mean,
 
 # Professional styling
 ax.set_xlabel('Patient Number', fontsize=12, fontweight='bold')
-ax.set_ylabel('Post-Surgical Symptom Score (Lower is Better)', 
+ax.set_ylabel('Symptom Score\n(Lower is Better)', 
               fontsize=12, fontweight='bold')
 ax.set_title('Post-Surgical Symptom Score (Randomized Assignment)', 
              fontsize=14, fontweight='bold', pad=15)
@@ -325,7 +325,7 @@ ax.grid(True, alpha=0.3, linestyle='-', linewidth=0.5)
 ax.legend(loc='upper right', fontsize=11, framealpha=0.9)
 ax.set_xlim(-2, len(patients_randomized_df) + 2)
 
-plt.tight_layout()
+plt.tight_layout(rect=[0, 0, 1, 0.98])
 plt.show()
 ```
 
@@ -345,7 +345,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Create figure and axes
-fig, ax = plt.subplots(figsize=(6, 3.5))
+fig, ax = plt.subplots(figsize=(8, 4))
 
 # Separate data by doctor
 dreamy_data = patients_df[patients_df['doctor_name'] == 'Doc Dreamy']
@@ -393,14 +393,14 @@ ax.text(x_annotation, duck_mean,
 
 # Professional styling
 ax.set_xlabel('Initial Patient Severity', fontsize=12, fontweight='bold')
-ax.set_ylabel('Post-Surgical Symptom Score (Lower is Better)', 
+ax.set_ylabel('Symptom Score\n(Lower is Better)', 
               fontsize=12, fontweight='bold')
 ax.set_title('Post-Surgical Symptom Score by Patient Severity', 
              fontsize=14, fontweight='bold', pad=15)
 ax.grid(True, alpha=0.3, linestyle='-', linewidth=0.5)
 ax.legend(loc='upper right', fontsize=11, framealpha=0.9)
 
-plt.tight_layout()
+plt.tight_layout(rect=[0, 0, 1, 0.98])
 plt.show()
 ```
 
