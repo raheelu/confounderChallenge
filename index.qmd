@@ -107,7 +107,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Create figure and axes
-fig, ax = plt.subplots(figsize=(8, 4))
+fig, ax = plt.subplots(figsize=(6, 3.5))
 
 # Separate data by doctor
 dreamy_data = patients_df[patients_df['doctor_name'] == 'Doc Dreamy']
@@ -277,7 +277,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Create figure and axes
-fig, ax = plt.subplots(figsize=(8, 4))
+fig, ax = plt.subplots(figsize=(6, 3.5))
 
 # Separate data by doctor
 dreamy_data = patients_randomized_df[patients_randomized_df['doctor_name'] == 'Doc Dreamy']
@@ -345,7 +345,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Create figure and axes
-fig, ax = plt.subplots(figsize=(8, 4))
+fig, ax = plt.subplots(figsize=(6, 3.5))
 
 # Separate data by doctor
 dreamy_data = patients_df[patients_df['doctor_name'] == 'Doc Dreamy']
